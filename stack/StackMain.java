@@ -13,7 +13,16 @@ public class StackMain {
         System.out.println();
         stack.peek();
         stack.display();
-
-
+        System.out.println();
+        Integer poppedData;
+        do {
+            poppedData = stack.pop();
+            if (poppedData == null) {
+                System.out.println("\n*** Stack is Empty ***");
+            } else
+                System.out.println("\nPopped Element is " + poppedData);
+            stack.display();
+        }
+        while (poppedData != null);
     }
 }

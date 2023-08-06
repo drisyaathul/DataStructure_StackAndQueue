@@ -27,4 +27,8 @@ public class Stack <T extends Comparable<T>>{
         linkedList.add((T) peekedData);
 
     }
+
+    public T pop() {
+        return linkedList.pop();
+    }
 }
